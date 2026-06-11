@@ -45,7 +45,20 @@
   <div class="wrap">
     <div class="reveal"><div class="eyebrow">What success looks like</div>
     <h2 class="section-title">Expertise that compounds, improvement that travels</h2></div>
-    <div class="success-grid reveal"><div class="scol"><h4>Professional growth</h4><ul><li>Expertise compounds across the Trust</li><li>Leadership capacity grows and internal talent is developed</li><li>Future leaders are ready before we need them</li></ul></div><div class="scol"><h4>School improvement</h4><ul><li>Research informs practice and best practice travels between schools</li><li>Innovation is tested safely and improvement is everyone&rsquo;s job</li><li>Schools develop the capacity and confidence to improve themselves</li></ul></div><div class="scol"><h4>Workflow &amp; technology</h4><ul><li>Technology makes learning clearer and more accessible</li><li>Administrative drag falls and staff time moves to where it matters</li><li>Systems become simpler, safer and easier to use</li></ul></div></div>
+    <div class="success-grid reveal">
+      <div class="scol success-card">
+        <h4>Professional growth <span class="chevron">▼</span></h4>
+        <ul><li>Expertise compounds across the Trust</li><li>Leadership capacity grows and internal talent is developed</li><li>Future leaders are ready before we need them</li></ul>
+      </div>
+      <div class="scol success-card">
+        <h4>School improvement <span class="chevron">▼</span></h4>
+        <ul><li>Research informs practice and best practice travels between schools</li><li>Innovation is tested safely and improvement is everyone&rsquo;s job</li><li>Schools develop the capacity and confidence to improve themselves</li></ul>
+      </div>
+      <div class="scol success-card">
+        <h4>Workflow &amp; technology <span class="chevron">▼</span></h4>
+        <ul><li>Technology makes learning clearer and more accessible</li><li>Administrative drag falls and staff time moves to where it matters</li><li>Systems become simpler, safer and easier to use</li></ul>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -154,6 +167,13 @@
 </footer>
 
 <script src="app.js"></script>
+<script>
+document.querySelectorAll('.success-card').forEach(function(card) {
+  card.addEventListener('click', function() {
+    card.classList.toggle('expanded');
+  });
+});
+</script>
 <script>
 const modalData = {
   'pg-teachers': {

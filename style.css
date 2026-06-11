@@ -416,6 +416,13 @@ footer .copy{margin-top:2rem;padding-top:1.5rem;border-top:1px solid rgba(255,25
 .conv-extra.open{display:block}
 .conv-extra ul{margin-top:.4rem}
 
+/* ---------- collapsible success cards ---------- */
+.success-card{cursor:pointer;}
+.success-card ul{display:none;margin-top:.8rem;}
+.success-card.expanded ul{display:block;}
+.success-card .chevron{display:inline-block;margin-left:.5rem;font-size:.75rem;transition:transform .2s;}
+.success-card.expanded .chevron{transform:rotate(180deg);}
+
 /* ---------- responsive ---------- */
 @media(max-width:900px){
   .pillars,.narrative,.success-grid,.kpi-grid,.minicards,.conv-cols,.scorecard-matrix,.enabler-cards{grid-template-columns:1fr}
