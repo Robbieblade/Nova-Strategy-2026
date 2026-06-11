@@ -125,10 +125,16 @@
 <!-- MODALS -->
 <div class="modal-overlay" id="modal-overlay" onclick="closeModalOnOverlay(event)">
   <div class="modal-box" id="modal-box">
-    <button class="modal-close" onclick="closeModal()" aria-label="Close">&times;</button>
-    <h3 id="modal-title"></h3>
-    <div class="modal-sub" id="modal-sub"></div>
-    <ul id="modal-list"></ul>
+    <div class="modal-header">
+      <div>
+        <div class="modal-sub" id="modal-sub"></div>
+        <h3 class="modal-title" id="modal-title"></h3>
+      </div>
+      <button class="modal-close" onclick="closeModal()" aria-label="Close">&times;</button>
+    </div>
+    <div class="modal-body">
+      <ul id="modal-list"></ul>
+    </div>
   </div>
 </div>
 
