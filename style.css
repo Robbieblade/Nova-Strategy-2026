@@ -327,27 +327,54 @@ footer .copy{margin-top:2rem;padding-top:1.5rem;border-top:1px solid rgba(255,25
 .ecard li{padding-left:1.4rem;position:relative;font-size:.94rem;color:#5a4f5c;line-height:1.5}
 .ecard li::before{content:"→";position:absolute;left:0;color:var(--teal);font-weight:700;font-size:.82rem;top:.05em}
 
+/* ---------- BAC numbered blocks (teamwork page) ---------- */
+.bac-block{
+  background:#fff;border:1px solid var(--line);border-radius:18px;
+  padding:1.8rem 2rem;margin-bottom:1.4rem;box-shadow:var(--shadow-sm);
+}
+.bac-head{display:flex;align-items:flex-start;gap:1.2rem;margin-bottom:.9rem}
+.bac-num{
+  width:44px;height:44px;border-radius:50%;background:var(--coral);color:#fff;
+  font-family:var(--display);font-weight:700;font-size:1.2rem;
+  display:grid;place-items:center;flex-shrink:0;
+}
+.bac-title{font-family:var(--display);font-weight:700;font-size:1.25rem;color:var(--plum);margin-bottom:.2rem}
+.bac-sub{font-size:.95rem;color:#6a5f6c;margin:0}
+.bac-kpi{
+  font-size:.84rem;color:#8a7f8c;border-left:3px solid var(--coral);
+  padding-left:.75rem;margin-bottom:1.1rem;font-style:italic;
+}
+.bac-roles{display:flex;flex-wrap:wrap;gap:.5rem}
+
 /* ---------- modal / popout ---------- */
 .modal-overlay{
-  display:none;position:fixed;inset:0;background:rgba(77,47,72,.55);z-index:500;
+  display:none;position:fixed;inset:0;background:rgba(77,47,72,.6);z-index:500;
   align-items:center;justify-content:center;padding:1.5rem;
 }
 .modal-overlay.open{display:flex}
 .modal-box{
-  background:#fff;border-radius:20px;padding:2rem 2.2rem;max-width:560px;width:100%;
-  box-shadow:0 28px 70px -20px rgba(77,47,72,.45);position:relative;max-height:85vh;overflow-y:auto;
+  background:#fff;border-radius:20px;overflow:hidden;max-width:540px;width:100%;
+  box-shadow:0 28px 70px -20px rgba(77,47,72,.5);max-height:85vh;overflow-y:auto;
+}
+.modal-header{
+  background:var(--plum);padding:1.4rem 1.6rem;display:flex;
+  align-items:flex-start;justify-content:space-between;gap:1rem;
+}
+.modal-header .modal-sub{
+  font-size:.75rem;color:rgba(255,255,255,.7);font-family:var(--display);
+  text-transform:uppercase;letter-spacing:.12em;margin-bottom:.3rem;
+}
+.modal-header .modal-title{
+  font-family:var(--display);color:#fff;font-size:1.15rem;font-weight:700;margin:0;
 }
 .modal-close{
-  position:absolute;top:1rem;right:1.1rem;background:none;border:none;
-  font-size:1.5rem;color:var(--plum);cursor:pointer;line-height:1;
-  font-family:var(--display);font-weight:600;
+  background:none;border:none;font-size:1.6rem;color:rgba(255,255,255,.7);
+  cursor:pointer;line-height:1;font-family:var(--display);font-weight:400;
+  flex-shrink:0;padding:0;margin-top:-.1rem;
 }
-.modal-close:hover{color:var(--coral)}
-.modal-box h3{font-family:var(--display);color:var(--plum);font-size:1.2rem;font-weight:700;margin-bottom:.3rem}
-.modal-box .modal-sub{font-size:.82rem;color:#8a7f8c;margin-bottom:1.2rem;font-family:var(--display);text-transform:uppercase;letter-spacing:.1em}
-.modal-box ul{list-style:none;display:grid;gap:.55rem}
-.modal-box li{padding-left:1.4rem;position:relative;font-size:.94rem;color:#5a4f5c;line-height:1.5}
-.modal-box li::before{content:"→";position:absolute;left:0;color:var(--teal);font-weight:700;font-size:.82rem;top:.05em}
+.modal-close:hover{color:#fff}
+.modal-body{padding:1.6rem 1.8rem}
+.modal-body p{font-size:.97rem;color:#3a3040;line-height:1.7}
 
 /* ---------- role popout buttons ---------- */
 .role-btn{
