@@ -293,18 +293,18 @@ footer .copy{margin-top:2rem;padding-top:1.5rem;border-top:1px solid rgba(255,25
 .sm-item{
   padding:1.1rem 1.3rem;border-bottom:1px solid rgba(255,255,255,.1);
 }
-.sm-col.sm-t .sm-item{background:rgba(240,144,123,.18)}
-.sm-col.sm-i .sm-item{background:rgba(90,183,178,.15)}
-.sm-col.sm-r .sm-item{background:rgba(124,152,171,.15)}
+.sm-col.sm-t .sm-item{background:rgba(255,255,255,.08)}
+.sm-col.sm-i .sm-item{background:rgba(255,255,255,.08)}
+.sm-col.sm-r .sm-item{background:rgba(255,255,255,.08)}
 .sm-item:last-child{border-bottom:none}
 .sm-area{
   font-family:var(--display);font-weight:700;font-size:.82rem;
   text-transform:uppercase;letter-spacing:.1em;margin-bottom:.4rem;
 }
-.sm-col.sm-t .sm-area{color:var(--coral-dark)}
-.sm-col.sm-i .sm-area{color:#3f9d98}
-.sm-col.sm-r .sm-area{color:#5d7e92}
-.sm-kpi{font-size:.9rem;color:var(--ink);line-height:1.45}
+.sm-col.sm-t .sm-area{color:var(--coral)}
+.sm-col.sm-i .sm-area{color:var(--teal)}
+.sm-col.sm-r .sm-area{color:#a9c2d0}
+.sm-kpi{font-size:.9rem;color:#f0ece8;line-height:1.45}
 
 /* ---------- enablers CTA button ---------- */
 .btn-enablers{
