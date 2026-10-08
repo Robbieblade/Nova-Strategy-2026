@@ -5,29 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Results &mdash; Nova Education Trust</title>
 <link rel="stylesheet" href="style.css">
-<style>
-:root{--accent:var(--slate)}
-
-/* ---- modal (results page) ---- */
-.modal-overlay{display:none;position:fixed;inset:0;background:rgba(77,47,72,0.75);z-index:1000;align-items:center;justify-content:center;}
-.modal-overlay.open{display:flex;}
-.modal-box{background:#fbf8f6;border-radius:20px;max-width:560px;width:90%;box-shadow:0 24px 56px -20px rgba(77,47,72,.4);overflow:hidden;}
-.modal-head{background:#4d2f48;padding:1.2rem 1.5rem;display:flex;justify-content:space-between;align-items:center;}
-.modal-head h3{color:#fff;font-family:'Jost',sans-serif;font-size:1.05rem;font-weight:700;margin:0;}
-.modal-close{background:none;border:none;color:#fff;font-size:1.5rem;cursor:pointer;line-height:1;padding:0 0 0 1rem;}
-.modal-body{padding:1.6rem;}
-.modal-subtitle{font-family:'Jost',sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#5ab7b2;margin-bottom:.9rem;display:block;}
-.modal-body p{font-family:'Jost',sans-serif;font-size:.92rem;line-height:1.7;color:#4a3d4c;margin-bottom:.6rem;padding-left:1rem;border-left:3px solid #f0907b;}
-.modal-body p:last-child{margin-bottom:0;}
-
-/* ---- collapsible success cards ---- */
-.success-card{cursor:pointer;}
-.success-card h4{display:flex;align-items:center;justify-content:space-between;gap:.5rem;}
-.success-card .chevron{font-size:.7rem;display:inline-block;transition:transform .25s;flex-shrink:0;color:var(--slate);}
-.success-card.expanded .chevron{transform:rotate(180deg);}
-.success-card ul{display:none;margin-top:.8rem;}
-.success-card.expanded ul{display:block;}
-</style>
+<style>:root{--accent:var(--slate)}</style>
 </head>
 <body>
 <header class="nav">
@@ -38,6 +16,7 @@
       <a href="teamwork.html">Teamwork</a>
       <a href="innovation.html">Innovation</a>
       <a href="results.html" class="active">Results</a>
+      <a href="measurement.html">Measurement</a>
       <a href="performance-framework.html">Every Role</a>
       <a href="enablers.html">Enablers</a>
       <a href="growth.html">Growth</a>
@@ -64,90 +43,26 @@
   </div>
 </section>
 
-<section class="band">
-  <div class="wrap">
-    <div class="reveal"><div class="eyebrow">What success looks like</div>
-    <h2 class="section-title">Achievement, character and readiness for what comes next</h2>
-    <p style="font-size:.85rem;color:#8a7f8c;margin-top:.5rem">Select a heading to expand the detail.</p></div>
-    <div class="success-grid reveal">
-      <div class="scol success-card">
-        <h4>Achievement <span class="chevron">▼</span></h4>
-        <ul><li>Strong attainment and progress above national, all phases</li><li>Disadvantaged gaps closing year on year</li><li>SEND pupils making strong progress against targets</li></ul>
-      </div>
-      <div class="scol success-card">
-        <h4>Personal development <span class="chevron">▼</span></h4>
-        <ul><li>Confident, articulate learners with strong character</li><li>Positive wellbeing evidenced and supported</li><li>A whole-child entitlement — the USP — that every pupil accesses</li></ul>
-      </div>
-      <div class="scol success-card">
-        <h4>Future readiness <span class="chevron">▼</span></h4>
-        <ul><li>Positive destinations above national for all groups</li><li>Employability skills, leadership and citizenship developed</li><li>A disposition to keep learning beyond Nova</li></ul>
-      </div>
-    </div>
-  </div>
-</section>
-
+<!-- WHAT RESULTS MEANS -->
 <section>
   <div class="wrap">
-    <div class="reveal"><div class="eyebrow">Measures</div>
-    <h2 class="section-title">Three KPIs — our three-year targets</h2>
-    <p class="lead">The point of all of it. We track the whole-child entitlement as closely as we track reading and maths — if something is a promise, it&rsquo;s a promise we can evidence.</p></div>
-    <div class="kpi-grid reveal"><div class="kpi"><div class="knum">KPI 1 — Achievement</div><h4>Attainment and progress</h4><div class="target"><b>Above national average</b> across all phases. Disadvantaged pupils exceeding statistical neighbours. SEND pupils making strong progress on their curriculum pathway. Safeguarding always Met — zero tolerance. No school ever below Expected in any Ofsted area.</div></div><div class="kpi"><div class="knum">KPI 2 — Personal Development</div><h4>Enrichment and wellbeing</h4><div class="target"><b>100%</b> of pupils accessing their full USP enrichment entitlement. <b>Pupil wellbeing</b> above national average — tracked, evidenced and acted upon.</div></div><div class="kpi"><div class="knum">KPI 3 — Future Readiness</div><h4>Destinations and readiness</h4><div class="target"><b>Positive destinations above national average</b> for all groups and all phases. Work-related learning experiences in place for all secondary pupils.</div></div></div>
-  </div>
-</section>
-
-<!-- ACHIEVEMENT / PERSONAL DEVELOPMENT / FUTURE READINESS BY PHASE -->
-<section class="band">
-  <div class="wrap">
     <div class="reveal">
-      <div class="eyebrow">What this means by phase</div>
-      <h2 class="section-title">Achievement. Personal Development. Future Readiness.</h2>
-      <p class="lead">Three sub-areas — each with phase-specific expectations. Select a phase to see what success looks like for those children.</p>
+      <div class="eyebrow">What Results means at Nova</div>
+      <h2 class="section-title">Achieve. Develop. Flourish.</h2>
     </div>
-
-    <div class="sub-area-block reveal" style="margin-top:2rem">
-      <h3>Achievement</h3>
-      <div class="kpi-label">Attainment and progress above national average across all phases — disadvantaged gaps closing, SEND pupils making strong progress</div>
-      <div class="roles-label">What does Achievement look like in…</div>
-      <div class="roles-row">
-        <button class="role-btn" style="color:var(--slate)" data-modal="modal-ach-eyfs">EYFS &amp; KS1</button>
-        <button class="role-btn" style="color:var(--slate)" data-modal="modal-ach-ks2">KS2</button>
-        <button class="role-btn" style="color:var(--slate)" data-modal="modal-ach-ks34">KS3 &amp; KS4</button>
-        <button class="role-btn" style="color:var(--slate)" data-modal="modal-ach-ks5">KS5</button>
-      </div>
-    </div>
-
-    <div class="sub-area-block reveal">
-      <h3>Personal Development</h3>
-      <div class="kpi-label">100% of pupils accessing their full USP enrichment entitlement</div>
-      <div class="roles-label">What does Personal Development look like in…</div>
-      <div class="roles-row">
-        <button class="role-btn" style="color:var(--slate)" data-modal="modal-pd-eyfs">EYFS &amp; KS1</button>
-        <button class="role-btn" style="color:var(--slate)" data-modal="modal-pd-ks2">KS2</button>
-        <button class="role-btn" style="color:var(--slate)" data-modal="modal-pd-ks34">KS3 &amp; KS4</button>
-        <button class="role-btn" style="color:var(--slate)" data-modal="modal-pd-ks5">KS5</button>
-      </div>
-    </div>
-
-    <div class="sub-area-block reveal">
-      <h3>Future Readiness</h3>
-      <div class="kpi-label">Positive destinations above national average — all groups, all phases</div>
-      <div class="roles-label">What does Future Readiness look like in…</div>
-      <div class="roles-row">
-        <button class="role-btn" style="color:var(--slate)" data-modal="modal-fr-eyfs">EYFS &amp; KS1</button>
-        <button class="role-btn" style="color:var(--slate)" data-modal="modal-fr-ks2">KS2</button>
-        <button class="role-btn" style="color:var(--slate)" data-modal="modal-fr-ks34">KS3 &amp; KS4</button>
-        <button class="role-btn" style="color:var(--slate)" data-modal="modal-fr-ks5">KS5</button>
-      </div>
+    <div class="callout reveal" style="margin-top:2rem;border-left-color:var(--slate)">
+      <p>Results are the point of all of it. Every child should achieve highly, in reading, writing, maths and across the curriculum, with the gaps that hold some children back closing year on year. Every child should develop fully as a person, through character, wellbeing and the whole-child entitlement we promise and can evidence. And every child should flourish beyond us, leaving ready for the next stage with the knowledge, confidence and positive destination that opens doors.</p>
+      <p style="margin-top:1rem">Achieve, develop, flourish. Results are what we commit to and what we report, and because every school and every child is different, we measure them by context, honestly and ambitiously.</p>
     </div>
   </div>
 </section>
 
 <section class="band">
-  <div class="wrap">
-    <div class="reveal"><div class="eyebrow">The three-year roadmap</div>
-    <h2 class="section-title">From clean baselines to distinctive outcomes</h2>
-    <p class="lead">Build the foundations, embed them, then sharpen and stretch.</p></div>
-    <div class="roadmap"><div class="yr reveal"><div class="yhead"><span class="ytag">Year 1</span><span class="yname">2027–28 · Align &amp; establish</span></div><ul><li><b>Achievement</b> — All schools aligned to the Self Evaluation Toolkit; disadvantaged and SEND gap baselines established in every school.</li><li><b>Personal Development</b> — Enrichment entitlement mapped across all schools; USP tracking in place for every child.</li><li><b>Future Readiness</b> — Positive destinations baseline established for all phases; careers education programme in place across all secondary schools.</li></ul></div><div class="yr reveal"><div class="yhead"><span class="ytag">Year 2</span><span class="yname">2028–29 · Embed &amp; connect</span></div><ul><li><b>Achievement</b> — Attainment above national in the majority of schools; disadvantaged and SEND gaps measurably narrower year on year.</li><li><b>Personal Development</b> — 80%+ of pupils accessing full enrichment entitlement; wellbeing data improving and acted upon.</li><li><b>Future Readiness</b> — Positive destinations above regional average; work-related learning in place across all secondary phases.</li></ul></div><div class="yr reveal"><div class="yhead"><span class="ytag">Year 3</span><span class="yname">2029–30 · Sharpen &amp; stretch</span></div><ul><li><b>Achievement</b> — Attainment and progress above national across all phases; disadvantaged pupils exceeding statistical neighbours.</li><li><b>Personal Development</b> — 100% of pupils accessing full USP entitlement; pupil wellbeing above national average.</li><li><b>Future Readiness</b> — Positive destinations above national average for all groups and all phases.</li></ul></div></div>
+  <div class="wrap reveal" style="text-align:center">
+    <div class="eyebrow">Accountability</div>
+    <h2 class="section-title">Measured fairly, by context</h2>
+    <p class="lead" style="margin:1rem auto 1.8rem">Attainment, progress, attendance and destinations are set as realistic, ambitious targets for each school, informed by its context and similar schools nationally.</p>
+    <a class="btn btn-enablers" href="measurement.html">How we measure results &#x2192;</a>
   </div>
 </section>
 
@@ -159,189 +74,6 @@
   </div>
 </section>
 
-<!-- ===================== MODALS — ACHIEVEMENT ===================== -->
-<div class="modal-overlay" id="modal-ach-eyfs">
-  <div class="modal-box">
-    <div class="modal-head">
-      <h3>EYFS &amp; KS1</h3>
-      <button class="modal-close">&times;</button>
-    </div>
-    <div class="modal-body">
-      <span class="modal-subtitle">Achievement — Results</span>
-      <p>Strong early reading and number foundations — phonics, early mathematics and oral language secure; children meeting expected standards at the end of KS1.</p>
-      <p>Disadvantaged children making strong progress from entry — gaps tracked from the start, closing year on year, and outcomes exceeding statistical neighbours when context is taken into account.</p>
-      <p>SEND children making strong progress against their targets and on their curriculum pathway, with provision well matched to need.</p>
-    </div>
-  </div>
-</div>
-
-<div class="modal-overlay" id="modal-ach-ks2">
-  <div class="modal-box">
-    <div class="modal-head">
-      <h3>KS2</h3>
-      <button class="modal-close">&times;</button>
-    </div>
-    <div class="modal-body">
-      <span class="modal-subtitle">Achievement — Results</span>
-      <p>Attainment at expected and greater depth standards in reading, writing and mathematics — above national average and improving year on year.</p>
-      <p>Disadvantaged pupils' outcomes exceed statistical neighbours when context is taken into account; gaps close year on year throughout the key stage.</p>
-      <p>SEND pupils making strong progress on their curriculum pathway and meeting their individual targets, supported by well-matched provision.</p>
-    </div>
-  </div>
-</div>
-
-<div class="modal-overlay" id="modal-ach-ks34">
-  <div class="modal-box">
-    <div class="modal-head">
-      <h3>KS3 &amp; KS4</h3>
-      <button class="modal-close">&times;</button>
-    </div>
-    <div class="modal-body">
-      <span class="modal-subtitle">Achievement — Results</span>
-      <p>Attainment and progress above national averages at GCSE across all subjects — with no school in the bottom quartile nationally.</p>
-      <p>Disadvantaged pupils' outcomes exceed statistical neighbours when context and starting points are taken into account; gaps close year on year.</p>
-      <p>SEND pupils achieve against their targets and on pathways that reflect both their potential and their needs — no gap that is not understood, owned and being addressed.</p>
-    </div>
-  </div>
-</div>
-
-<div class="modal-overlay" id="modal-ach-ks5">
-  <div class="modal-box">
-    <div class="modal-head">
-      <h3>KS5</h3>
-      <button class="modal-close">&times;</button>
-    </div>
-    <div class="modal-body">
-      <span class="modal-subtitle">Achievement — Results</span>
-      <p>A-level and vocational results above national averages, with students achieving grades that reflect their potential not their starting point.</p>
-      <p>Disadvantaged students achieving outcomes that match their ability — gaps closing year on year, with no ceiling on aspiration.</p>
-      <p>SEND students accessing and succeeding in the full range of post-16 pathways; all students achieving the qualifications they need for the next step.</p>
-    </div>
-  </div>
-</div>
-
-<!-- ===================== MODALS — PERSONAL DEVELOPMENT ===================== -->
-<div class="modal-overlay" id="modal-pd-eyfs">
-  <div class="modal-box">
-    <div class="modal-head">
-      <h3>EYFS &amp; KS1</h3>
-      <button class="modal-close">&times;</button>
-    </div>
-    <div class="modal-body">
-      <span class="modal-subtitle">Personal Development — Results</span>
-      <p>Every child accessing the full Nova USP enrichment entitlement — no child left out because of cost or circumstance.</p>
-      <p>Strong character foundations developing — kindness, resilience, curiosity and a love of learning that children carry forward.</p>
-      <p>Wellbeing tracked and supported; every child feeling safe, known and confident to engage with the world.</p>
-    </div>
-  </div>
-</div>
-
-<div class="modal-overlay" id="modal-pd-ks2">
-  <div class="modal-box">
-    <div class="modal-head">
-      <h3>KS2</h3>
-      <button class="modal-close">&times;</button>
-    </div>
-    <div class="modal-body">
-      <span class="modal-subtitle">Personal Development — Results</span>
-      <p>All pupils engaged in the full breadth of USP enrichment activities — sports, arts, performance, community — with no barriers to participation.</p>
-      <p>Character and values embedded — pupils showing courage, kindness and responsibility in daily life, with leadership opportunities for all.</p>
-      <p>Positive wellbeing evidenced through school surveys; concerns identified early and supported consistently.</p>
-    </div>
-  </div>
-</div>
-
-<div class="modal-overlay" id="modal-pd-ks34">
-  <div class="modal-box">
-    <div class="modal-head">
-      <h3>KS3 &amp; KS4</h3>
-      <button class="modal-close">&times;</button>
-    </div>
-    <div class="modal-body">
-      <span class="modal-subtitle">Personal Development — Results</span>
-      <p>All pupils accessing their full USP entitlement — including those who face the greatest barriers.</p>
-      <p>Strong personal development evident in character, leadership, community involvement and cultural capital — every pupil known as a whole person, not only an exam candidate.</p>
-      <p>Wellbeing supported through a whole-school approach; mental health taken seriously and acted upon, not treated as an afterthought.</p>
-    </div>
-  </div>
-</div>
-
-<div class="modal-overlay" id="modal-pd-ks5">
-  <div class="modal-box">
-    <div class="modal-head">
-      <h3>KS5</h3>
-      <button class="modal-close">&times;</button>
-    </div>
-    <div class="modal-body">
-      <span class="modal-subtitle">Personal Development — Results</span>
-      <p>Students equipped for life beyond school — confident, articulate, with a record of achievement and service they can speak to.</p>
-      <p>Wellbeing supported through a sixth form culture that prepares students for independence, resilience and the demands of what comes next.</p>
-      <p>All students leaving with a strong sense of who they are and what they can offer the world.</p>
-    </div>
-  </div>
-</div>
-
-<!-- ===================== MODALS — FUTURE READINESS ===================== -->
-<div class="modal-overlay" id="modal-fr-eyfs">
-  <div class="modal-box">
-    <div class="modal-head">
-      <h3>EYFS &amp; KS1</h3>
-      <button class="modal-close">&times;</button>
-    </div>
-    <div class="modal-body">
-      <span class="modal-subtitle">Future Readiness — Results</span>
-      <p>Children ready for the next stage of education — socially, emotionally and academically — with strong foundations in literacy and mathematics.</p>
-      <p>Curiosity, confidence and a love of learning that will sustain children through everything that follows.</p>
-      <p>Every child known and supported as they transition, so no child starts their next stage without the skills, relationships or belief they need.</p>
-    </div>
-  </div>
-</div>
-
-<div class="modal-overlay" id="modal-fr-ks2">
-  <div class="modal-box">
-    <div class="modal-head">
-      <h3>KS2</h3>
-      <button class="modal-close">&times;</button>
-    </div>
-    <div class="modal-body">
-      <span class="modal-subtitle">Future Readiness — Results</span>
-      <p>Pupils ready for secondary school — with secure literacy and numeracy, study skills, self-regulation and the resilience to manage a new environment.</p>
-      <p>Pupils who believe in their own potential and understand that their future is shaped by their choices now.</p>
-      <p>A pupil record of achievement and enrichment that reflects the whole child and supports a confident transition.</p>
-    </div>
-  </div>
-</div>
-
-<div class="modal-overlay" id="modal-fr-ks34">
-  <div class="modal-box">
-    <div class="modal-head">
-      <h3>KS3 &amp; KS4</h3>
-      <button class="modal-close">&times;</button>
-    </div>
-    <div class="modal-body">
-      <span class="modal-subtitle">Future Readiness — Results</span>
-      <p>Positive destinations for all — apprenticeships, further education, sixth form, employment — with disadvantaged pupils achieving positive destinations above national average.</p>
-      <p>Careers education, information and guidance that is honest, ambitious and personalised; every pupil with work-related learning experiences.</p>
-      <p>Every pupil with a plan they believe in and the qualifications to support it.</p>
-    </div>
-  </div>
-</div>
-
-<div class="modal-overlay" id="modal-fr-ks5">
-  <div class="modal-box">
-    <div class="modal-head">
-      <h3>KS5</h3>
-      <button class="modal-close">&times;</button>
-    </div>
-    <div class="modal-body">
-      <span class="modal-subtitle">Future Readiness — Results</span>
-      <p>University, apprenticeship and employment destinations that reflect ambition and preparation, not just attainment.</p>
-      <p>Disadvantaged students supported to access competitive destinations — no ceiling on aspiration, and outcomes that match ability not background.</p>
-      <p>Every student leaving with a positive next step, an application that tells their story, and the confidence to take it.</p>
-    </div>
-  </div>
-</div>
-
 <footer>
   <div class="wrap">
     <div class="fgrid">
@@ -351,6 +83,7 @@
         <a href="teamwork.html">Teamwork</a>
         <a href="innovation.html">Innovation</a>
         <a href="results.html">Results</a>
+        <a href="measurement.html">Measurement</a>
         <a href="performance-framework.html">Every Role</a>
         <a href="enablers.html">Enablers</a>
         <a href="growth.html">Growth</a>
@@ -362,39 +95,5 @@
 </footer>
 
 <script src="app.js"></script>
-<script>
-// ---- Modal open ----
-document.querySelectorAll('[data-modal]').forEach(btn => {
-  btn.addEventListener('click', () => {
-    document.getElementById(btn.dataset.modal).classList.add('open');
-  });
-});
-
-// ---- Modal close (close button or backdrop click) ----
-document.querySelectorAll('.modal-close').forEach(btn => {
-  btn.addEventListener('click', () => {
-    btn.closest('.modal-overlay').classList.remove('open');
-  });
-});
-document.querySelectorAll('.modal-overlay').forEach(overlay => {
-  overlay.addEventListener('click', e => {
-    if (e.target === overlay) overlay.classList.remove('open');
-  });
-});
-
-// ---- Escape key ----
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') {
-    document.querySelectorAll('.modal-overlay.open').forEach(o => o.classList.remove('open'));
-  }
-});
-
-// ---- Collapsible success cards ----
-document.querySelectorAll('.success-card').forEach(card => {
-  card.querySelector('h4').addEventListener('click', () => {
-    card.classList.toggle('expanded');
-  });
-});
-</script>
 </body>
 </html>
